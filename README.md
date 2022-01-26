@@ -1,6 +1,6 @@
 # Rotating-Proxies-with-JavaScript
 
-[<img src="https://img.shields.io/static/v1?label=&message=JavaScript&color=brightgreen" />](https://github.com/topics/python) [<img src="https://img.shields.io/static/v1?label=&message=Web%20Scraping&color=important" />](https://github.com/topics/web-scraping) [<img src="https://img.shields.io/static/v1?label=&message=Rotating%20Proxies&color=blueviolet" />](https://github.com/topics/rotating-proxies)
+[<img src="https://img.shields.io/static/v1?label=&message=JavaScript&color=brightgreen" />](https://github.com/topics/javascript) [<img src="https://img.shields.io/static/v1?label=&message=Web%20Scraping&color=important" />](https://github.com/topics/web-scraping) [<img src="https://img.shields.io/static/v1?label=&message=Rotating%20Proxies&color=blueviolet" />](https://github.com/topics/rotating-proxies)
 
 - [Requirements](#requirements)
 - [Finding Current IP Aaddress](#finding-current-ip-aaddress)
