@@ -103,7 +103,7 @@ See the complete implementation in the file [single_proxy_axios.js](single_proxy
 
 ## Rotating Multiple Proxies
 
-If multiple proxies are available, it is possible to rotate proxies with javaScript.
+If multiple proxies are available, it is possible to rotate proxies with JavaScript.
 
 Some websites allow downloading a list of proxies as CSV or similar format. 
 
