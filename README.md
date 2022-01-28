@@ -9,7 +9,7 @@
 
 ## Requirements
 
-In this tutorial, we will be using Axios to make requests. If needed, the code can be easily modified for other libraries as well.
+In this tutorial, we will be using [Axios](https://github.com/axios/axios) to make requests. If needed, the code can be easily modified for other libraries as well.
 
 Open the terminal and run the following command to initiate a new Node project:
 
