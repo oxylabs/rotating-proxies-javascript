@@ -9,15 +9,15 @@
 
 ## Requirements
 
-In this tutorial, we will be using [Axios](https://www.npmjs.com/package/axios) to make requests. The code can be modified with little effort for other libraries.
+In this tutorial, we will be using Axios to make requests. If needed, the code can be easily modified for other libraries as well.
 
-Open the terminal and run the following command to initialize a new Node project:
+Open the terminal and run the following command to initiate a new Node project:
 
 ```shell
 npm init -y
 ```
 
-Next, install Axios by running the following command:
+Next step is to install Axios by running the following command:
 
 ```sh
 npm install axios
@@ -25,9 +25,9 @@ npm install axios
 
 ## Finding Current IP Address
 
-To see if the proxy is working or not, first, we need a basic code that prints the current IP address.
+To check if the proxy works properly, first, we need a basic code that prints the current IP address.
 
-The URL http://httpbin.org/ip is good for this purpose is it returns IP address in a clean format.
+The website http://httpbin.org/ip is appropriate for this purpose as it returns IP addresses in a clean format.
 
 Create a new JavaScript file and make changes as outlined below.
 
@@ -36,8 +36,7 @@ The first step would be to import `axios`.
 ```JavaScript
 const axios = require("axios");
 ```
-
-Next, call `get()` method and send the url of the target website. 
+Next, call the `get()` method and send the URL of the target website.
 
 ```javascript
 const url = 'https://httpbin.org/ip';
@@ -51,7 +50,7 @@ console.log(response.data);
 // Prints current IP
 ```
 
-For the complete implementation, see the file [no_proxy.js](no_proxy.js).
+For the complete implementation, see the [no_proxy.js](no_proxy.js) file.
 
 ## Using Proxy 
 
@@ -147,7 +146,7 @@ The data object is an `Array` that contains each row as `Array`.
 
 We can loop over all these rows using the `map` function.
 
-Note that in the loop, we will call `get` method of Axios to call the same URL, each time with a different proxy.
+Note that in the loop, we will call the get method of Axios to call the same URL, each time with a different proxy.
 
 The `get` method of Axios is `async`. This means that we can not call the `map` function of `data` directly.
 
@@ -159,7 +158,7 @@ await Promise.all(data.map(async (item) => {
     }));
 ```
 
- Its time to create the `proxy` object. The structure will be as as explained in the earlier section.
+It is time to create the `proxy` object. The structure will be as explained in the earlier section.
 
 ```javascript
 // Create the Proxy object:
@@ -180,4 +179,4 @@ const response = await axios.get(url, {
 });
 ```
 
-For the complete code, please see [rotating_proxies.js](rotating_proxies.js).
+For the complete code, please see the [rotating_proxies.js](rotating_proxies.js) file.
