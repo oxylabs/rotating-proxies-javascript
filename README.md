@@ -52,15 +52,13 @@ console.log(response.data);
 
 For the complete implementation, see the [no_proxy.js](no_proxy.js) file.
 
-## Using Proxy 
-
-Free proxies can be found with a simple internet search. 
+## Using a Proxy 
 
 For this example, we are going to use a proxy with IP 46.138.246.248 and port 8088. 
 
 Axios can handle proxies directly. The proxy information needs to be sent as the second parameter of the `get()` method.
 
-The proxy object should have `host` and `port`. The following is such example:
+The proxy object should have a `host` and `port`. See an example:
 
 ```JavaScript
 proxy_no_auth = {
@@ -69,7 +67,7 @@ proxy_no_auth = {
 }
 ```
 
-If the proxies needs authentication, supply the additional `auth` object with `username`and `password`.
+If proxies need authentication, simply add an `auth` object with `username` and `password`.
 
 ```javascript
 proxy_with_auth = {
@@ -82,7 +80,7 @@ proxy_with_auth = {
 }
 ```
 
-This `proxy_no_auth` or `proxy_with_auth` object can then be sent the `get` method.
+This `proxy_no_auth` or `proxy_with_auth` object can then be sent with the `get` method.
 
 ```javascript
 const response = await axios.get(url, {
@@ -90,7 +88,7 @@ const response = await axios.get(url, {
 });
 ```
 
-Run this code from the terminal to see the effective IP.
+Run this code from the terminal to see the effective IP address.
 
 You will notice that now, instead of your original IP, the IP address of the proxy is printed.
 
@@ -99,7 +97,7 @@ node single_proxy_axios.js
 // Prints {'origin': '46.138.246.248'}
 ```
 
-See the complete implementation in the file [single_proxy_axios.js](single_proxy_axios.js).
+See the complete implementation in the [single_proxy_axios.js](single_proxy_axios.js) file.
 
 ## Rotating Multiple Proxies
 
