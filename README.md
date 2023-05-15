@@ -99,6 +99,10 @@ node single_proxy_axios.js
 
 See the complete implementation in the [single_proxy_axios.js](single_proxy_axios.js) file.
 
+If encountering an issue where you cannot target an HTTPS with an HTTP Proxy, use the [http_https_workaround.js](http_https_workaround.js) file.
+
+This is a known issue, more info: https://github.com/axios/axios/issues/925
+
 ## Rotating Multiple Proxies
 
 If multiple proxies are available, it is possible to rotate proxies with JavaScript.
