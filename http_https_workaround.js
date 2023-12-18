@@ -7,10 +7,10 @@ axios = axios.create({httpsAgent});
 // Create and execute a new Promise
 (async function () {
     try {
-        const url = `https://ip.oxylabs.io/`;
+        const url = `https://ip.oxylabs.io/location`;
         // Call the GET method on the URL with proxy information
         let response = await axios.get(url);
-        // Print effective IP address
+        // Print effective IP address and location details
         console.log(response.data);
     } catch (err) {
         //Log the error message
