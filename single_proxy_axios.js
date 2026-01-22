@@ -5,7 +5,7 @@ const axios = require("axios");
 (async function () {
     try {
 
-        // Proxy with authentication
+        // Proxy without authentication
         proxy_no_auth = {
             host: '206.253.164.122',
             port: 80
